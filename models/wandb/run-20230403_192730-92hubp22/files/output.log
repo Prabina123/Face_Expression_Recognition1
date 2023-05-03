@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/afs/crc.nd.edu/user/p/psharma3/NNproject/models/main.py", line 54, in <module>
+    model = linear_model()
+            ^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable

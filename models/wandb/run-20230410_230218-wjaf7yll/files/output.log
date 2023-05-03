@@ -1,0 +1,8 @@
+28821
+train indices: 23056
+subset: 23056
+Traceback (most recent call last):
+  File "/afs/crc.nd.edu/user/p/psharma3/NNproject/models/main.py", line 85, in <module>
+    optimizer = optim.SGD(SimpleNet.parameters(), lr=0.001, momentum=0.9)
+                          ^^^^^^^^^
+NameError: name 'SimpleNet' is not defined

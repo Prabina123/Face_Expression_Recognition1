@@ -1,0 +1,171 @@
+{
+    "os": "Linux-4.18.0-425.3.1.el8.x86_64-x86_64-with-glibc2.28",
+    "python": "3.11.2",
+    "heartbeatAt": "2023-05-02T03:21:24.758866",
+    "startedAt": "2023-05-02T03:21:24.314537",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/afs/crc.nd.edu/user/p/psharma3/NNproject/models/main.py",
+    "codePath": "main.py",
+    "host": "qa-1080ti-001.crc.nd.edu",
+    "username": "psharma3",
+    "executable": "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/bin/python3",
+    "cpu_count": 24,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 2620.122791666666,
+        "min": 1200.0,
+        "max": 2900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2499.799,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.799,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.799,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.798,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.799,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.799,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.798,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.798,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.798,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.799,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.798,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.798,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2507.538,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2507.538,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2507.54,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2507.539,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.804,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.824,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2900.0,
+            "min": 1200.0,
+            "max": 2900.0
+        }
+    ],
+    "disk": {
+        "total": 930.0573692321777,
+        "used": 56.12266540527344
+    },
+    "gpu": "NVIDIA GeForce GTX 1080 Ti",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1080 Ti",
+            "memory_total": 11811160064
+        },
+        {
+            "name": "NVIDIA GeForce GTX 1080 Ti",
+            "memory_total": 11811160064
+        },
+        {
+            "name": "NVIDIA GeForce GTX 1080 Ti",
+            "memory_total": 11811160064
+        },
+        {
+            "name": "NVIDIA GeForce GTX 1080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 125.51911163330078
+    }
+}

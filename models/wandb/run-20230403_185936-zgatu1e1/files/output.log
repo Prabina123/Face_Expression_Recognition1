@@ -1,0 +1,73 @@
+28821
+train indices: 23056
+subset: 23056
+Training started:
+Epoch 1 Started
+validation started
+validation total 5765
+Epoch 1 Ended and logged in wandb
+Epoch 2 Started
+validation started
+validation total 5765
+Epoch 2 Ended and logged in wandb
+Epoch 3 Started
+validation started
+validation total 5765
+Epoch 3 Ended and logged in wandb
+Epoch 4 Started
+validation started
+validation total 5765
+Epoch 4 Ended and logged in wandb
+Epoch 5 Started
+validation started
+validation total 5765
+Epoch 5 Ended and logged in wandb
+Epoch 6 Started
+validation started
+validation total 5765
+Epoch 6 Ended and logged in wandb
+Epoch 7 Started
+validation started
+validation total 5765
+Epoch 7 Ended and logged in wandb
+Epoch 8 Started
+validation started
+validation total 5765
+Epoch 8 Ended and logged in wandb
+Epoch 9 Started
+validation started
+validation total 5765
+Epoch 9 Ended and logged in wandb
+Epoch 10 Started
+validation started
+Traceback (most recent call last):
+  File "/afs/crc.nd.edu/user/p/psharma3/NNproject/models/main.py", line 118, in <module>
+    for val_data,val_labels in val_loader:
+  File "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 634, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1329, in _next_data
+    idx, data = self._get_data()
+                ^^^^^^^^^^^^^^^^
+  File "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1295, in _get_data
+    success, data = self._try_get_data()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1133, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/lib/python3.11/multiprocessing/queues.py", line 113, in get
+    if not self._poll(timeout):
+           ^^^^^^^^^^^^^^^^^^^
+  File "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/lib/python3.11/multiprocessing/connection.py", line 256, in poll
+    return self._poll(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/lib/python3.11/multiprocessing/connection.py", line 423, in _poll
+    r = wait([self], timeout)
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/lib/python3.11/multiprocessing/connection.py", line 930, in wait
+    ready = selector.select(timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/lib/python3.11/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

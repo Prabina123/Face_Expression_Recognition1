@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/afs/crc.nd.edu/user/p/psharma3/NNproject/models/main.py", line 68, in <module>
+    train_dataset = torchvision.datasets.ImageFolder(root='/afs/crc.nd.edu/user/p/psharma3/NNproject/images/train',transform=transform)
+                    ^^^^^^^^^^^
+NameError: name 'torchvision' is not defined

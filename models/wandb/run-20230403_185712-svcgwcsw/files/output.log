@@ -1,0 +1,12 @@
+
+28821
+Traceback (most recent call last):
+  File "/afs/crc.nd.edu/user/p/psharma3/NNproject/models/main.py", line 64, in <module>
+    train_indices, val_indices = train_test_split(indices, train_size=90000, stratify=train_dataset.targets)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/lib/python3.11/site-packages/sklearn/model_selection/_split.py", line 2562, in train_test_split
+    n_train, n_test = _validate_shuffle_split(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/lib/python3.11/site-packages/sklearn/model_selection/_split.py", line 2193, in _validate_shuffle_split
+    raise ValueError(
+ValueError: train_size=90000 should be either positive and smaller than the number of samples 28821 or a float in the (0, 1) range

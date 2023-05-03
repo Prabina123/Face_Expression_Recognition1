@@ -1,0 +1,7 @@
+28821
+train indices: 23056
+Traceback (most recent call last):
+  File "/afs/crc.nd.edu/user/p/psharma3/NNproject/models/main.py", line 79, in <module>
+    print("subset:",len(train_sampler))
+                        ^^^^^^^^^^^^^
+NameError: name 'train_sampler' is not defined

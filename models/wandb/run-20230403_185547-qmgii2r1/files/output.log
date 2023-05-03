@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/afs/crc.nd.edu/user/p/psharma3/NNproject/models/main.py", line 59, in <module>
+    train_dataset = torchvision.datasets.ImageFolder(root='/afs/crc.nd.edu/user/p/sharma3/NNproject/images/train',transform=transform)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/lib/python3.11/site-packages/torchvision/datasets/folder.py", line 309, in __init__
+    super().__init__(
+  File "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/lib/python3.11/site-packages/torchvision/datasets/folder.py", line 144, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/lib/python3.11/site-packages/torchvision/datasets/folder.py", line 218, in find_classes
+    return find_classes(directory)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/lib/python3.11/site-packages/torchvision/datasets/folder.py", line 40, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+                                             ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/afs/crc.nd.edu/user/p/sharma3/NNproject/images/train'

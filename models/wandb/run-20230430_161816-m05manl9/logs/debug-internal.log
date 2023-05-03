@@ -1,0 +1,910 @@
+2023-04-30 16:18:16,234 INFO    StreamThr :62385 [internal.py:wandb_internal():87] W&B internal server running at pid: 62385, started at: 2023-04-30 16:18:16.233275
+2023-04-30 16:18:16,235 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status
+2023-04-30 16:18:16,235 INFO    WriterThread:62385 [datastore.py:open_for_write():85] open: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/run-m05manl9.wandb
+2023-04-30 16:18:16,237 DEBUG   SenderThread:62385 [sender.py:send():336] send: header
+2023-04-30 16:18:16,237 DEBUG   SenderThread:62385 [sender.py:send():336] send: run
+2023-04-30 16:18:16,486 INFO    SenderThread:62385 [dir_watcher.py:__init__():219] watching files in: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files
+2023-04-30 16:18:16,486 INFO    SenderThread:62385 [sender.py:_start_run_threads():1078] run started: m05manl9 with start time 1682885896.23284
+2023-04-30 16:18:16,486 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:18:16,487 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: check_version
+2023-04-30 16:18:16,488 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:18:16,488 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: check_version
+2023-04-30 16:18:16,570 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: run_start
+2023-04-30 16:18:16,580 DEBUG   HandlerThread:62385 [system_info.py:__init__():31] System info init
+2023-04-30 16:18:16,580 DEBUG   HandlerThread:62385 [system_info.py:__init__():46] System info init done
+2023-04-30 16:18:16,580 INFO    HandlerThread:62385 [system_monitor.py:start():183] Starting system monitor
+2023-04-30 16:18:16,580 INFO    SystemMonitor:62385 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-04-30 16:18:16,580 INFO    HandlerThread:62385 [system_monitor.py:probe():204] Collecting system info
+2023-04-30 16:18:16,581 INFO    SystemMonitor:62385 [interfaces.py:start():187] Started cpu monitoring
+2023-04-30 16:18:16,581 INFO    SystemMonitor:62385 [interfaces.py:start():187] Started disk monitoring
+2023-04-30 16:18:16,582 INFO    SystemMonitor:62385 [interfaces.py:start():187] Started gpu monitoring
+2023-04-30 16:18:16,583 INFO    SystemMonitor:62385 [interfaces.py:start():187] Started memory monitoring
+2023-04-30 16:18:16,583 INFO    SystemMonitor:62385 [interfaces.py:start():187] Started network monitoring
+2023-04-30 16:18:16,606 DEBUG   HandlerThread:62385 [system_info.py:probe():195] Probing system
+2023-04-30 16:18:16,608 DEBUG   HandlerThread:62385 [git.py:repo():40] git repository is invalid
+2023-04-30 16:18:16,609 DEBUG   HandlerThread:62385 [system_info.py:probe():240] Probing system done
+2023-04-30 16:18:16,609 DEBUG   HandlerThread:62385 [system_monitor.py:probe():213] {'os': 'Linux-4.18.0-425.3.1.el8.x86_64-x86_64-with-glibc2.28', 'python': '3.11.2', 'heartbeatAt': '2023-04-30T20:18:16.606771', 'startedAt': '2023-04-30T20:18:16.128217', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/afs/crc.nd.edu/user/p/psharma3/NNproject/models/main.py', 'codePath': 'main.py', 'host': 'qa-titanx-001.crc.nd.edu', 'username': 'psharma3', 'executable': '/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/bin/python3', 'cpu_count': 16, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3131.676875, 'min': 1200.0, 'max': 3200.0}, 'cpu_freq_per_core': [{'current': 3200.0, 'min': 1200.0, 'max': 3200.0}, {'current': 3200.0, 'min': 1200.0, 'max': 3200.0}, {'current': 3200.0, 'min': 1200.0, 'max': 3200.0}, {'current': 3200.0, 'min': 1200.0, 'max': 3200.0}, {'current': 3200.0, 'min': 1200.0, 'max': 3200.0}, {'current': 3200.0, 'min': 1200.0, 'max': 3200.0}, {'current': 3200.0, 'min': 1200.0, 'max': 3200.0}, {'current': 3200.0, 'min': 1200.0, 'max': 3200.0}, {'current': 3200.0, 'min': 1200.0, 'max': 3200.0}, {'current': 2622.069, 'min': 1200.0, 'max': 3200.0}, {'current': 2942.087, 'min': 1200.0, 'max': 3200.0}, {'current': 3200.0, 'min': 1200.0, 'max': 3200.0}, {'current': 3200.0, 'min': 1200.0, 'max': 3200.0}, {'current': 3200.0, 'min': 1200.0, 'max': 3200.0}, {'current': 2942.674, 'min': 1200.0, 'max': 3200.0}, {'current': 3200.0, 'min': 1200.0, 'max': 3200.0}], 'disk': {'total': 930.0573692321777, 'used': 56.733211517333984}, 'gpu': 'NVIDIA GeForce GTX TITAN X', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX TITAN X', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce GTX TITAN X', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce GTX TITAN X', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce GTX TITAN X', 'memory_total': 12884901888}], 'memory': {'total': 62.5208854675293}}
+2023-04-30 16:18:16,609 INFO    HandlerThread:62385 [system_monitor.py:probe():214] Finished collecting system info
+2023-04-30 16:18:16,609 INFO    HandlerThread:62385 [system_monitor.py:probe():217] Publishing system info
+2023-04-30 16:18:16,609 DEBUG   HandlerThread:62385 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-30 16:18:16,610 DEBUG   HandlerThread:62385 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-30 16:18:16,610 DEBUG   HandlerThread:62385 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-04-30 16:18:17,487 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_created():278] file/dir created: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/requirements.txt
+2023-04-30 16:18:17,488 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_created():278] file/dir created: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:18:17,488 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_created():278] file/dir created: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/conda-environment.yaml
+2023-04-30 16:18:21,489 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/conda-environment.yaml
+2023-04-30 16:18:21,640 DEBUG   HandlerThread:62385 [system_info.py:_save_conda():86] Saving conda packages done
+2023-04-30 16:18:21,641 INFO    HandlerThread:62385 [system_monitor.py:probe():219] Finished publishing system info
+2023-04-30 16:18:21,643 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:18:21,643 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-30 16:18:21,643 DEBUG   SenderThread:62385 [sender.py:send():336] send: files
+2023-04-30 16:18:21,644 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-04-30 16:18:21,647 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:18:21,648 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:18:21,734 DEBUG   SenderThread:62385 [sender.py:send():336] send: telemetry
+2023-04-30 16:18:22,066 INFO    wandb-upload_0:62385 [upload_job.py:push():138] Uploaded file /tmp/280698.1.gpu/tmpt5v88il6wandb/db10qzbg-wandb-metadata.json
+2023-04-30 16:18:22,490 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_created():278] file/dir created: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-metadata.json
+2023-04-30 16:18:23,490 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_created():278] file/dir created: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:18:25,491 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:18:27,445 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:18:32,446 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:18:36,653 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:18:36,654 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:18:38,261 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:18:39,253 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:18:39,254 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:18:39,255 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:18:39,257 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:18:39,496 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:18:39,497 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:18:41,497 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:18:44,258 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:18:49,262 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:18:49,500 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/config.yaml
+2023-04-30 16:18:51,663 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:18:51,663 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:18:53,502 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:18:53,983 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:18:53,984 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:18:53,984 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:18:53,985 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:18:54,503 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:18:54,986 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:18:55,503 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:18:59,986 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:19:04,987 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:19:06,663 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:19:06,663 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:19:07,507 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:19:08,453 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:19:08,454 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:19:08,454 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:19:08,455 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:19:08,508 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:19:09,508 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:19:10,456 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:19:15,457 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:19:16,583 DEBUG   SystemMonitor:62385 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-04-30 16:19:16,585 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:19:20,586 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:19:21,664 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:19:21,664 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:19:22,992 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:19:22,993 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:19:22,994 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:19:22,996 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:19:23,514 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:19:23,514 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:19:25,515 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:19:25,997 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:19:30,998 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:19:36,664 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:19:36,664 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:19:36,664 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:19:37,519 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:19:37,757 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:19:37,758 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:19:37,759 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:19:37,760 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:19:38,520 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:19:39,520 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:19:41,760 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:19:46,585 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:19:47,586 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:19:51,524 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:19:51,665 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:19:51,665 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:19:52,467 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:19:52,468 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:19:52,469 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:19:52,470 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:19:52,525 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:19:53,470 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:19:53,525 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:19:58,471 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:20:03,472 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:20:06,665 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:20:06,665 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:20:07,296 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:20:07,297 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:20:07,297 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:20:07,298 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:20:07,531 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:20:07,531 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:20:09,299 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:20:09,532 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:20:14,300 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:20:16,586 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:20:19,587 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:20:21,536 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:20:21,667 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:20:21,667 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:20:22,122 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:20:22,123 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:20:22,124 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:20:22,124 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:20:22,536 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:20:23,537 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:20:25,125 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:20:30,126 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:20:35,541 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:20:35,863 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:20:36,666 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:20:36,667 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:20:36,883 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:20:36,884 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:20:36,885 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:20:36,887 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:20:37,542 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:20:37,542 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:20:40,887 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:20:45,888 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:20:46,587 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:20:51,547 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:20:51,666 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:20:51,667 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:20:51,667 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:20:51,728 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:20:51,753 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:20:51,753 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:20:51,754 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:20:52,548 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:20:53,548 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:20:56,755 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:21:01,756 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:21:05,553 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:21:06,466 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:21:06,467 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:21:06,467 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:21:06,468 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:21:06,554 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:21:06,667 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:21:06,668 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:21:06,770 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:21:07,554 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:21:11,771 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:21:16,588 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:21:17,588 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:21:21,372 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:21:21,374 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:21:21,374 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:21:21,376 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:21:21,561 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:21:21,561 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:21:21,673 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:21:21,674 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:21:22,765 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:21:23,561 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:21:27,766 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:21:32,767 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:21:35,566 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:21:36,042 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:21:36,043 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:21:36,043 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:21:36,044 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:21:36,566 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:21:36,688 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:21:36,689 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:21:37,566 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:21:37,800 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:21:42,801 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:21:46,588 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:21:48,589 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:21:49,571 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:21:50,972 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:21:50,974 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:21:50,974 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:21:50,975 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:21:51,571 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:21:51,572 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:21:51,698 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:21:51,699 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:21:53,783 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:21:58,784 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:22:03,803 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:22:05,576 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:22:05,752 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:22:05,753 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:22:05,753 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:22:05,754 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:22:06,577 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:22:06,714 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:22:06,715 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:22:07,577 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:22:08,825 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:22:13,826 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:22:16,589 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:22:19,581 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:22:19,624 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:22:20,603 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:22:20,604 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:22:20,605 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:22:20,606 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:22:21,583 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:22:21,583 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:22:21,725 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:22:21,726 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:22:24,809 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:22:29,810 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:22:35,461 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:22:35,461 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:22:35,462 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:22:35,462 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:22:35,464 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:22:35,588 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:22:35,588 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:22:36,725 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:22:36,725 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:22:37,589 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:22:40,810 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:22:45,810 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:22:46,591 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:22:49,595 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:22:50,730 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:22:50,731 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:22:50,731 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:22:50,732 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:22:51,596 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:22:51,596 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:22:51,732 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:22:51,736 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:22:51,736 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:22:56,820 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:23:01,821 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:23:05,447 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:23:05,448 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:23:05,449 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:23:05,450 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:23:05,601 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:23:05,601 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:23:06,742 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:23:06,742 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:23:06,829 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:23:07,602 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:23:11,830 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:23:16,591 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:23:17,591 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:23:21,738 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:23:21,742 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:23:21,742 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:23:22,012 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:23:22,013 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:23:22,014 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:23:22,014 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:23:22,739 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:23:23,015 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:23:23,739 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:23:28,015 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:23:33,016 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:23:35,744 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:23:36,567 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:23:36,567 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:23:36,568 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:23:36,569 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:23:36,744 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:23:36,810 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:23:36,811 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:23:37,745 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:23:38,895 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:23:43,896 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:23:46,591 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:23:49,553 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:23:51,519 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:23:51,520 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:23:51,520 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:23:51,521 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:23:51,750 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:23:51,750 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:23:51,824 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:23:51,824 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:23:53,751 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:23:54,906 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:23:59,907 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:24:05,256 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:24:05,755 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:24:06,213 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:24:06,214 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:24:06,214 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:24:06,215 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:24:06,756 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:24:06,824 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:24:06,825 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:24:07,756 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:24:10,912 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:24:15,912 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:24:16,592 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:24:19,761 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:24:20,851 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:24:20,853 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:24:20,853 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:24:20,854 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:24:21,762 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:24:21,762 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:24:21,828 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:24:21,829 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:24:21,910 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:24:26,911 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:24:31,912 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:24:35,496 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:24:35,497 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:24:35,497 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:24:35,500 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:24:35,767 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:24:35,767 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:24:36,828 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:24:36,828 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:24:36,916 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:24:37,768 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:24:41,917 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:24:46,593 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:24:47,594 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:24:49,772 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:24:50,233 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:24:50,234 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:24:50,235 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:24:50,236 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:24:50,772 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:24:51,773 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:24:51,830 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:24:51,831 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:24:52,919 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:24:57,920 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:25:02,920 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:25:05,052 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:25:05,053 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:25:05,054 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:25:05,055 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:25:05,965 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:25:05,965 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:25:06,830 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:25:06,830 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:25:07,966 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:25:08,917 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:25:13,918 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:25:16,594 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:25:19,710 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:25:19,710 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:25:19,711 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:25:19,711 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:25:19,712 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:25:19,970 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:25:19,971 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:25:21,842 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:25:21,843 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:25:21,971 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:25:24,963 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:25:29,964 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:25:33,976 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:25:34,362 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:25:34,363 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:25:34,364 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:25:34,364 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:25:34,976 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:25:35,365 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:25:35,977 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:25:36,850 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:25:36,851 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:25:40,932 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:25:45,933 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:25:46,595 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:25:49,086 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:25:49,087 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:25:49,087 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:25:49,088 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:25:49,982 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:25:49,982 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:25:51,089 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:25:51,857 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:25:51,858 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:25:51,983 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:25:56,945 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:26:02,736 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:26:03,719 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:26:03,720 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:26:03,720 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:26:03,722 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:26:03,987 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:26:03,987 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:26:05,988 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:26:06,857 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:26:06,857 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:26:07,954 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:26:12,955 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:26:16,595 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:26:18,203 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:26:18,481 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:26:18,481 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:26:18,482 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:26:18,482 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:26:18,483 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:26:19,204 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:26:20,204 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:26:21,871 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:26:21,872 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:26:23,959 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:26:28,960 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:26:33,093 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:26:33,094 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:26:33,094 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:26:33,096 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:26:33,209 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:26:34,096 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:26:34,209 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:26:36,210 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:26:36,881 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:26:36,881 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:26:39,967 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:26:44,969 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:26:46,596 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:26:47,838 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:26:47,839 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:26:47,839 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:26:47,840 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:26:48,214 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:26:48,215 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:26:50,215 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:26:50,841 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:26:51,882 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:26:51,882 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:26:55,964 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:27:01,643 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:27:02,220 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:27:02,589 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:27:02,590 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:27:02,590 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:27:02,591 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:27:03,220 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:27:04,220 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:27:06,886 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:27:06,887 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:27:06,971 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:27:11,972 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:27:16,597 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:27:17,158 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:27:17,158 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:27:17,159 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:27:17,159 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:27:17,160 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:27:17,225 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:27:18,226 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:27:20,226 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:27:21,887 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:27:21,887 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:27:22,976 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:27:27,977 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:27:32,217 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:27:32,217 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:27:32,218 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:27:32,219 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:27:32,231 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:27:32,231 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:27:33,219 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:27:34,232 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:27:36,886 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:27:36,887 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:27:38,964 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:27:43,965 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:27:46,236 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:27:46,598 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:27:46,938 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:27:46,939 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:27:46,939 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:27:46,940 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:27:47,236 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:27:48,237 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:27:49,940 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:27:51,898 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:27:51,899 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:27:54,983 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:28:00,549 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:28:01,528 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:28:01,529 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:28:01,529 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:28:01,530 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:28:02,242 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:28:02,242 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:28:04,243 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:28:06,531 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:28:06,903 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:28:06,903 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:28:12,031 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:28:16,090 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:28:16,091 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:28:16,091 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:28:16,092 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:28:16,247 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:28:16,247 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:28:16,598 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:28:17,599 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:28:18,248 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:28:21,916 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:28:21,917 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:28:23,000 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:28:28,001 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:28:30,252 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:28:30,669 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:28:30,670 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:28:30,670 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:28:30,671 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:28:31,253 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:28:32,253 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:28:33,672 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:28:36,927 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:28:36,927 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:28:39,010 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:28:44,603 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:28:45,537 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:28:45,538 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:28:45,538 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:28:45,539 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:28:46,258 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:28:46,259 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:28:46,599 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:28:48,259 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:28:50,600 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:28:51,936 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:28:51,937 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:28:56,022 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:29:00,109 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:29:00,110 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:29:00,110 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:29:00,111 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:29:00,264 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:29:00,264 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:29:01,112 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:29:02,265 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:29:06,113 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:29:06,939 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:29:06,940 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:29:12,044 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:29:14,269 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:29:14,694 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:29:14,695 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:29:14,695 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:29:14,696 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:29:15,269 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:29:16,270 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:29:16,600 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:29:17,600 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:29:21,940 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:29:21,940 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:29:23,023 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:29:28,343 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:29:29,277 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:29:29,278 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:29:29,278 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:29:29,280 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:29:30,275 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:29:30,275 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:29:32,276 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:29:34,281 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:29:36,953 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:29:36,953 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:29:40,031 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:29:43,986 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:29:43,987 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:29:43,988 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:29:43,989 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:29:44,281 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:29:44,281 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:29:45,990 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:29:46,281 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:29:46,601 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:29:51,602 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:29:51,958 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:29:51,958 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:29:56,606 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:29:58,433 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:29:58,782 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:29:58,783 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:29:58,784 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:29:58,784 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:29:59,434 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:30:00,434 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:30:01,785 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:30:06,786 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:30:06,965 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:30:06,966 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:30:12,375 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:30:13,370 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:30:13,370 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:30:13,371 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:30:13,372 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:30:13,439 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:30:14,439 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:30:16,440 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:30:16,601 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:30:17,602 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:30:21,972 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:30:21,973 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:30:23,060 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:30:27,931 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:30:27,932 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:30:27,933 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:30:27,934 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:30:28,444 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:30:28,445 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:30:28,934 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:30:30,445 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:30:33,935 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:30:36,973 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:30:36,973 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:30:39,058 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:30:42,449 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:30:42,672 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:30:42,673 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:30:42,673 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:30:42,674 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:30:43,450 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:30:44,450 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:30:44,674 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:30:46,602 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:30:50,603 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:30:51,977 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:30:51,978 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:30:56,224 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:30:57,196 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:30:57,197 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:30:57,197 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:30:57,199 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:30:57,455 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:30:58,455 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:31:00,456 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:31:02,200 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:31:06,985 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:31:06,985 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:31:08,075 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:31:11,673 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:31:11,957 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:31:11,960 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:31:11,960 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:31:11,961 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:31:12,673 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:31:13,674 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:31:13,962 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:31:16,603 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:31:19,604 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:31:21,984 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:31:21,985 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:31:25,525 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:31:25,678 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:31:26,489 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:31:26,490 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:31:26,490 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:31:26,491 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:31:26,678 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:31:27,679 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:31:31,492 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:31:36,493 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:31:36,985 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:31:36,985 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:31:39,683 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:31:41,190 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:31:41,190 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:31:41,191 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:31:41,192 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:31:41,684 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:31:41,684 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:31:42,192 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:31:46,604 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:31:47,604 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:31:52,000 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:31:52,000 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:31:53,076 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:31:55,689 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:31:55,734 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:31:55,735 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:31:55,735 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:31:55,737 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:31:56,689 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:31:57,689 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:31:58,737 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:32:03,738 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:32:06,999 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:32:07,000 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:32:09,328 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:32:09,694 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:32:10,313 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:32:10,314 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:32:10,315 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:32:10,316 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:32:10,694 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:32:11,695 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:32:15,317 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:32:16,604 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:32:20,605 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:32:21,999 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:32:22,000 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:32:23,699 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:32:24,889 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:32:24,890 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:32:24,891 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:32:24,891 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:32:25,892 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:32:25,914 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:32:25,914 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:32:30,893 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:32:35,894 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:32:37,009 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:32:37,009 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:32:39,714 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:32:39,715 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:32:39,715 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:32:39,716 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:32:39,919 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:32:39,919 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:32:41,717 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:32:41,920 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:32:46,605 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:32:47,606 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:32:52,009 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:32:52,010 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:32:53,320 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:32:53,924 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:32:54,302 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:32:54,303 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:32:54,304 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:32:54,305 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:32:54,924 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:32:55,925 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:32:59,306 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:33:04,306 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:33:07,010 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-30 16:33:07,010 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: stop_status
+2023-04-30 16:33:07,929 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:33:08,938 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-30 16:33:08,939 DEBUG   SenderThread:62385 [sender.py:send():336] send: history
+2023-04-30 16:33:08,939 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: summary_record
+2023-04-30 16:33:08,940 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:33:09,451 DEBUG   SenderThread:62385 [sender.py:send():336] send: exit
+2023-04-30 16:33:09,451 INFO    SenderThread:62385 [sender.py:send_exit():559] handling exit code: 0
+2023-04-30 16:33:09,451 INFO    SenderThread:62385 [sender.py:send_exit():561] handling runtime: 892
+2023-04-30 16:33:09,453 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:33:09,453 INFO    SenderThread:62385 [sender.py:send_exit():567] send defer
+2023-04-30 16:33:09,453 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: defer
+2023-04-30 16:33:09,453 INFO    HandlerThread:62385 [handler.py:handle_request_defer():170] handle defer: 0
+2023-04-30 16:33:09,453 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:33:09,453 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: defer
+2023-04-30 16:33:09,453 INFO    SenderThread:62385 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-04-30 16:33:09,454 INFO    SenderThread:62385 [sender.py:transition_state():587] send defer: 1
+2023-04-30 16:33:09,454 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: defer
+2023-04-30 16:33:09,454 INFO    HandlerThread:62385 [handler.py:handle_request_defer():170] handle defer: 1
+2023-04-30 16:33:09,454 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: defer
+2023-04-30 16:33:09,454 INFO    SenderThread:62385 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-04-30 16:33:09,454 INFO    SenderThread:62385 [sender.py:transition_state():587] send defer: 2
+2023-04-30 16:33:09,454 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: defer
+2023-04-30 16:33:09,454 INFO    HandlerThread:62385 [handler.py:handle_request_defer():170] handle defer: 2
+2023-04-30 16:33:09,454 INFO    HandlerThread:62385 [system_monitor.py:finish():193] Stopping system monitor
+2023-04-30 16:33:09,455 DEBUG   SystemMonitor:62385 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2023-04-30 16:33:09,455 DEBUG   SystemMonitor:62385 [system_monitor.py:_start():172] Publishing last batch of metrics
+2023-04-30 16:33:09,456 INFO    HandlerThread:62385 [interfaces.py:finish():199] Joined cpu monitor
+2023-04-30 16:33:09,456 INFO    HandlerThread:62385 [interfaces.py:finish():199] Joined disk monitor
+2023-04-30 16:33:09,788 INFO    HandlerThread:62385 [interfaces.py:finish():199] Joined gpu monitor
+2023-04-30 16:33:09,789 INFO    HandlerThread:62385 [interfaces.py:finish():199] Joined memory monitor
+2023-04-30 16:33:09,789 INFO    HandlerThread:62385 [interfaces.py:finish():199] Joined network monitor
+2023-04-30 16:33:09,789 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: defer
+2023-04-30 16:33:09,789 INFO    SenderThread:62385 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-04-30 16:33:09,789 INFO    SenderThread:62385 [sender.py:transition_state():587] send defer: 3
+2023-04-30 16:33:09,789 DEBUG   SenderThread:62385 [sender.py:send():336] send: stats
+2023-04-30 16:33:09,790 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: defer
+2023-04-30 16:33:09,790 INFO    HandlerThread:62385 [handler.py:handle_request_defer():170] handle defer: 3
+2023-04-30 16:33:09,790 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: defer
+2023-04-30 16:33:09,790 INFO    SenderThread:62385 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-04-30 16:33:09,790 INFO    SenderThread:62385 [sender.py:transition_state():587] send defer: 4
+2023-04-30 16:33:09,790 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: defer
+2023-04-30 16:33:09,790 INFO    HandlerThread:62385 [handler.py:handle_request_defer():170] handle defer: 4
+2023-04-30 16:33:09,791 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: defer
+2023-04-30 16:33:09,791 INFO    SenderThread:62385 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-04-30 16:33:09,791 INFO    SenderThread:62385 [sender.py:transition_state():587] send defer: 5
+2023-04-30 16:33:09,791 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: defer
+2023-04-30 16:33:09,791 INFO    HandlerThread:62385 [handler.py:handle_request_defer():170] handle defer: 5
+2023-04-30 16:33:09,791 DEBUG   SenderThread:62385 [sender.py:send():336] send: summary
+2023-04-30 16:33:09,792 INFO    SenderThread:62385 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-30 16:33:09,793 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: defer
+2023-04-30 16:33:09,793 INFO    SenderThread:62385 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-04-30 16:33:09,793 INFO    SenderThread:62385 [sender.py:transition_state():587] send defer: 6
+2023-04-30 16:33:09,793 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: defer
+2023-04-30 16:33:09,793 INFO    HandlerThread:62385 [handler.py:handle_request_defer():170] handle defer: 6
+2023-04-30 16:33:09,793 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: defer
+2023-04-30 16:33:09,793 INFO    SenderThread:62385 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-04-30 16:33:09,793 INFO    SenderThread:62385 [sender.py:transition_state():587] send defer: 7
+2023-04-30 16:33:09,793 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: status_report
+2023-04-30 16:33:09,794 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: defer
+2023-04-30 16:33:09,794 INFO    HandlerThread:62385 [handler.py:handle_request_defer():170] handle defer: 7
+2023-04-30 16:33:09,794 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: defer
+2023-04-30 16:33:09,794 INFO    SenderThread:62385 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-04-30 16:33:09,930 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:33:10,158 INFO    SenderThread:62385 [sender.py:transition_state():587] send defer: 8
+2023-04-30 16:33:10,158 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: defer
+2023-04-30 16:33:10,158 INFO    HandlerThread:62385 [handler.py:handle_request_defer():170] handle defer: 8
+2023-04-30 16:33:10,158 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: defer
+2023-04-30 16:33:10,158 INFO    SenderThread:62385 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-04-30 16:33:10,159 INFO    SenderThread:62385 [sender.py:transition_state():587] send defer: 9
+2023-04-30 16:33:10,159 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: defer
+2023-04-30 16:33:10,159 INFO    HandlerThread:62385 [handler.py:handle_request_defer():170] handle defer: 9
+2023-04-30 16:33:10,159 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: defer
+2023-04-30 16:33:10,159 INFO    SenderThread:62385 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-04-30 16:33:10,159 INFO    SenderThread:62385 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-04-30 16:33:10,451 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-30 16:33:10,930 INFO    Thread-13 :62385 [dir_watcher.py:_on_file_modified():295] file/dir modified: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:33:10,931 INFO    SenderThread:62385 [dir_watcher.py:finish():395] scan: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files
+2023-04-30 16:33:10,931 INFO    SenderThread:62385 [dir_watcher.py:finish():409] scan save: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/config.yaml config.yaml
+2023-04-30 16:33:10,931 INFO    SenderThread:62385 [dir_watcher.py:finish():409] scan save: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json wandb-summary.json
+2023-04-30 16:33:10,934 INFO    SenderThread:62385 [dir_watcher.py:finish():409] scan save: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/requirements.txt requirements.txt
+2023-04-30 16:33:10,936 INFO    SenderThread:62385 [dir_watcher.py:finish():409] scan save: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/conda-environment.yaml conda-environment.yaml
+2023-04-30 16:33:10,937 INFO    SenderThread:62385 [dir_watcher.py:finish():409] scan save: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-metadata.json wandb-metadata.json
+2023-04-30 16:33:10,941 INFO    SenderThread:62385 [dir_watcher.py:finish():409] scan save: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log output.log
+2023-04-30 16:33:10,942 INFO    SenderThread:62385 [sender.py:transition_state():587] send defer: 10
+2023-04-30 16:33:10,942 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: poll_exit
+2023-04-30 16:33:10,944 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: defer
+2023-04-30 16:33:10,945 INFO    HandlerThread:62385 [handler.py:handle_request_defer():170] handle defer: 10
+2023-04-30 16:33:10,945 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: defer
+2023-04-30 16:33:10,945 INFO    SenderThread:62385 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-04-30 16:33:10,945 INFO    SenderThread:62385 [file_pusher.py:finish():164] shutting down file pusher
+2023-04-30 16:33:11,373 INFO    wandb-upload_0:62385 [upload_job.py:push():138] Uploaded file /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/config.yaml
+2023-04-30 16:33:11,374 INFO    wandb-upload_4:62385 [upload_job.py:push():138] Uploaded file /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/output.log
+2023-04-30 16:33:11,374 INFO    wandb-upload_1:62385 [upload_job.py:push():138] Uploaded file /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/wandb-summary.json
+2023-04-30 16:33:11,375 INFO    wandb-upload_3:62385 [upload_job.py:push():138] Uploaded file /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/conda-environment.yaml
+2023-04-30 16:33:11,381 INFO    wandb-upload_2:62385 [upload_job.py:push():138] Uploaded file /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/files/requirements.txt
+2023-04-30 16:33:11,452 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-30 16:33:11,452 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: poll_exit
+2023-04-30 16:33:11,582 INFO    Thread-12 (_thread_body):62385 [sender.py:transition_state():587] send defer: 11
+2023-04-30 16:33:11,582 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: defer
+2023-04-30 16:33:11,582 INFO    HandlerThread:62385 [handler.py:handle_request_defer():170] handle defer: 11
+2023-04-30 16:33:11,583 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: defer
+2023-04-30 16:33:11,583 INFO    SenderThread:62385 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-04-30 16:33:11,583 INFO    SenderThread:62385 [file_pusher.py:join():169] waiting for file pusher
+2023-04-30 16:33:11,583 INFO    SenderThread:62385 [sender.py:transition_state():587] send defer: 12
+2023-04-30 16:33:11,583 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: defer
+2023-04-30 16:33:11,583 INFO    HandlerThread:62385 [handler.py:handle_request_defer():170] handle defer: 12
+2023-04-30 16:33:11,583 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: defer
+2023-04-30 16:33:11,583 INFO    SenderThread:62385 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-04-30 16:33:11,883 INFO    SenderThread:62385 [sender.py:transition_state():587] send defer: 13
+2023-04-30 16:33:11,883 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: defer
+2023-04-30 16:33:11,884 INFO    HandlerThread:62385 [handler.py:handle_request_defer():170] handle defer: 13
+2023-04-30 16:33:11,884 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: defer
+2023-04-30 16:33:11,884 INFO    SenderThread:62385 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-04-30 16:33:11,884 INFO    SenderThread:62385 [sender.py:transition_state():587] send defer: 14
+2023-04-30 16:33:11,884 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: defer
+2023-04-30 16:33:11,884 DEBUG   SenderThread:62385 [sender.py:send():336] send: final
+2023-04-30 16:33:11,884 INFO    HandlerThread:62385 [handler.py:handle_request_defer():170] handle defer: 14
+2023-04-30 16:33:11,884 DEBUG   SenderThread:62385 [sender.py:send():336] send: footer
+2023-04-30 16:33:11,885 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: defer
+2023-04-30 16:33:11,885 INFO    SenderThread:62385 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-04-30 16:33:11,885 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-30 16:33:11,885 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: poll_exit
+2023-04-30 16:33:11,886 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-30 16:33:11,886 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: poll_exit
+2023-04-30 16:33:11,886 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: server_info
+2023-04-30 16:33:11,887 DEBUG   SenderThread:62385 [sender.py:send_request():363] send_request: server_info
+2023-04-30 16:33:11,887 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: get_summary
+2023-04-30 16:33:11,889 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: sampled_history
+2023-04-30 16:33:12,043 INFO    MainThread:62385 [wandb_run.py:_footer_history_summary_info():3422] rendering history
+2023-04-30 16:33:12,044 INFO    MainThread:62385 [wandb_run.py:_footer_history_summary_info():3454] rendering summary
+2023-04-30 16:33:12,044 INFO    MainThread:62385 [wandb_run.py:_footer_sync_info():3380] logging synced files
+2023-04-30 16:33:12,045 DEBUG   HandlerThread:62385 [handler.py:handle_request():144] handle_request: shutdown
+2023-04-30 16:33:12,045 INFO    HandlerThread:62385 [handler.py:finish():842] shutting down handler
+2023-04-30 16:33:12,887 INFO    WriterThread:62385 [datastore.py:close():298] close: /afs/crc.nd.edu/user/p/psharma3/NNproject/models/wandb/run-20230430_161816-m05manl9/run-m05manl9.wandb
+2023-04-30 16:33:13,043 INFO    SenderThread:62385 [sender.py:finish():1504] shutting down sender
+2023-04-30 16:33:14,510 INFO    SenderThread:62385 [file_pusher.py:finish():164] shutting down file pusher
+2023-04-30 16:33:14,510 INFO    SenderThread:62385 [file_pusher.py:join():169] waiting for file pusher

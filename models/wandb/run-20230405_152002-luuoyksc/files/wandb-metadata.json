@@ -1,0 +1,151 @@
+{
+    "os": "Linux-4.18.0-425.13.1.el8_7.x86_64-x86_64-with-glibc2.28",
+    "python": "3.11.2",
+    "heartbeatAt": "2023-04-05T19:20:02.647872",
+    "startedAt": "2023-04-05T19:20:02.195302",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/afs/crc.nd.edu/user/p/psharma3/NNproject/models/main.py",
+    "codePath": "main.py",
+    "host": "crcfe01.crc.nd.edu",
+    "username": "psharma3",
+    "executable": "/afs/crc.nd.edu/user/p/psharma3/.conda/envs/NNproject/bin/python3",
+    "cpu_count": 24,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 2807.5626666666662,
+        "min": 1200.0,
+        "max": 3300.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2829.794,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2813.962,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2813.939,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2813.91,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2813.818,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2816.381,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2813.775,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2813.721,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2813.7,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2813.678,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2813.476,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2813.455,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2799.825,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2799.825,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2799.825,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2799.825,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2799.824,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2799.824,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2799.825,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2799.824,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2799.825,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2799.824,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2799.824,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2799.825,
+            "min": 1200.0,
+            "max": 3300.0
+        }
+    ],
+    "disk": {
+        "total": 1336.6536254882812,
+        "used": 68.24076461791992
+    },
+    "memory": {
+        "total": 250.95544052124023
+    }
+}
